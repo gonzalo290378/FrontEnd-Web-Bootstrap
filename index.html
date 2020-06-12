@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Demo Bootstrap</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- CON FIXED-TOP DEJO EL MENU 
+                //DE NAVEGACION FIJO -->
+
+            <div class="container">
+
+                <!-- ACA DENTRO VA TODO EL CONTENIDO -->
+                <a href="#" class="navbar-brand text-white">Gon Developer</a>
+                <!-- PARA DISPOSITIVOS MOVILES (SOLO LO VEMOS EN TAMANO SMALL) -->
+                <!-- ACA USAMOS EL # DATA TARGET -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Menu de Navegacion">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- ACA AGREGAMOS ENLACES -->
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">Inicio</a>
+                        </li>
+
+                        <!-- ACA HACEMOS UN SUB-MENU -->
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-white" id="menu-categorias"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Productos</a>
+                            <div class="dropdown-menu" aria-labelledby="menu-categorias">
+                                <a href="#" class="dropdown-item">Laptops</a>
+                                <a href="#" class="dropdown-item">Desktop</a>
+                                <a href="#" class="dropdown-item">SmartPhones</a>
+                                <a href="#" class="dropdown-item">Tv</a>
+                            </div>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">Contacto</a>
+                        </li>
+                    </ul>
+
+                    <form action="" class="form-inline my-2 my-lg-0">
+                        <input type="serch" class="form-control mr-sm-2" placeholder="Buscar" aria-level="" Buscar>
+                        <button class="btn btn-danger my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </div>
+
+
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-12">
+                    <!-- SEGUNDO SLIDESHOW DONDE SE CAMBIA EL ID PARA DIFERERNCIARLO DEL PRIMER CAROUSEL -->
+                    <div class="carousel slide" id="secundary-carousel" data-ride="carousel">
+                        <!-- ESTA LINEA 
+                                //VA DE MOMORIA -->
+
+                        <ol class="carousel-indicators">
+                            <!-- AGREGA BOTONES QUE NOS MUESTRA CUANTAS IMAGENES HAY HAY -->
+
+                            <li data-target="#secundary-carousel" data-slide-to="0" class="active">
+                            <li data-target="#secundary-carousel" data-slide-to="1">
+                            <li data-target="#secundary-carousel" data-slide-to="2">
+
+
+                            </li>
+                        </ol>
+
+
+                        <div class="carousel-inner">
+                            <!-- NOS PERMITE AGRUPAR LOS CONTENEDORES QUE GUARDAN EL TEXTO E IMAGENES-->
+                            <div class="carousel-item active">
+                                <!-- DENTRO VA A TENER TODO EL CONTENIDO: TEXTO E IMAGENES -->
+                                <div class="carousel-caption d-block">
+                                    <!-- TEXTO DE LA IMAGEN -->
+
+                                </div>
+                                <img src="img/s1.jpg" class="d-block w-100" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <!-- DENTRO VA A TENER TODO EL CONTENIDO: TEXTO E IMAGENES -->
+                                <div class="carousel-caption d-block">
+                                    <!-- TEXTO DE LA IMAGEN -->
+
+                                </div>
+                                <img src="img/s2.jpg" class="d-block w-100" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <!-- DENTRO VA A TENER TODO EL CONTENIDO: TEXTO E IMAGENES -->
+                                <div class="carousel-caption d-block">
+                                    <!-- TEXTO DE LA IMAGEN -->
+
+                                </div>
+                                <img src="img/s3.jpg" class="d-block w-100" alt="">
+                            </div>
+                        </div>
+
+                        <!-- BOTON ANTERIOR -->
+                        <a href="#secundary-carousel" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+
+                        <!-- BOTON POSTERIOR -->
+                        <a href="#secundary-carousel" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Posterior</span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="py-4 border-botton">
+                        <h1 class="text-center">Galeria</h1>
+
+
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                        <img src="img/1.jpg" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-title">Iphone</h3>
+                            <p class="card-text">
+                                Visita nuestra store con los ultimos modelos de Iphone's.
+                            </p>
+                            <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                            <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                        <img src="img/2.jpg" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-title">Desktop</h3>
+                            <p class="card-text">
+                                9na generacion de Intel Core para desktop's.
+                            </p>
+                            <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                            <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                        <img src="img/3.jpg" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-title">Camaras</h3>
+                            <p class="card-text">
+                                Camaras profesionales para vos y toda tu familia!
+                            </p>
+                            <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                            <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                        <img src="img/4.jpg" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-title">Apple Watch</h3>
+                            <p class="card-text">
+                                Adquiere tu reloj inteligente ahora con un 25% off.
+                            </p>
+                            <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                            <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                        <img src="img/5.jpg" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-title">Teclados</h3>
+                            <p class="card-text">
+                                Teclados para programadores ahora!.
+                            </p>
+                            <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                            <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                        <img src="img/6.jpg" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-title">Tablet's</h3>
+                            <p class="card-text">
+                                Tablet's multimarca en nuestra store.
+                            </p>
+                            <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                            <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                        <img src="img/7.jpg" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-title">Laptop's</h3>
+                            <p class="card-text">
+                                Para aquellos que necesiten programar a alta velocidad.
+                            </p>
+                            <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                            <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                        <img src="img/8.jpg" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-title">Amoblamiento</h3>
+                            <p class="card-text">
+                                Todo el amoblamiento que necesitas, lo tenemos aca!
+                            </p>
+                            <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                            <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <footer class="mt-5">
+
+        <div class="container">
+
+            <ul class="nav">
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">Acerca de</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Nosotros</a>
+                </li>
+
+                
+
+            </ul>
+
+
+
+            <blockquote class="blockquote text-right">
+                <p class="text-danger">Programacion en Java - JavaScript - Frameworks Js y SQL Server
+                    <footer class="blockquote-footer">
+                        <p>Gonzalo De Genaro</p>
+                    </footer>
+                </p>
+            </blockquote>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
